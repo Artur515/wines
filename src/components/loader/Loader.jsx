@@ -1,24 +1,24 @@
 import React from 'react';
-import './loader.scss'
-const Loader = () => {
-    return (
-        <>
-            <div className="holder">
-                <div className="preloader">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </>
-    );
-};
+
+import styles from './loader.module.scss';
+
+function Loader() {
+  return (
+    <div className={styles.holder}>
+      <div className={styles.preloader}>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </div>
+  );
+}
 
 export default Loader;

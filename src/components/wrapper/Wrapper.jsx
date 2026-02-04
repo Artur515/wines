@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   .fade-enter {
     opacity: 0.01;
   }
@@ -30,3 +30,5 @@ export const Wrapper = styled.div`
     left: 0;
   }
 `;
+
+export default Wrapper;

@@ -1,0 +1,35 @@
+.center {
+  text-align: center;
+  max-width: 1200px;
+}
+
+.pagination {
+  display: inline-block;
+
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 4px;
+  }
+
+  button {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    background: transparent;
+  }
+
+  button:hover:not(.active) {
+    background-color: #3e3e3e;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/*.pagination li.active {*/
+/*  background-color: #030303;*/
+/*  color: white;*/
+/*  border: 1px solid #0a0a0a;*/
+/*}*/

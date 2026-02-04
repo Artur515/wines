@@ -1,1 +1,3 @@
-export const baseURL = `https://api.sampleapis.com/wines`
+const baseURL = 'https://api.sampleapis.com/wines';
+
+export default baseURL;

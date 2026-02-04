@@ -1,14 +1,14 @@
 $count: 10;
-$time: 2; //in seconds
+$time: 2; // in seconds
 $size: 100;
 $color: black;
 
 .holder {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 300px;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }

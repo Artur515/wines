@@ -1,0 +1,22 @@
+.btnWrap {
+  width: 100%;
+}
+
+.button {
+  margin-top: 5px;
+  width: 50%;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  cursor: pointer;
+
+  &:hover {
+    background: #bbbbbb;
+    opacity: 0.5;
+    color: white;
+    transition: 0.5s linear;
+  }
+}

@@ -1,15 +1,16 @@
-import './App.css';
 import React from 'react';
-import Application from "./application/Application";
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+import Application from './application/Application';
+import styles from './App.module.scss';
 
-
-const App = () => {
-    return (
-        <BrowserRouter basename='/wines'>
-            <Application/>
-        </BrowserRouter>
-    );
-};
+function App() {
+  return (
+    <div className={styles.app}>
+      <BrowserRouter basename="/wines">
+        <Application />
+      </BrowserRouter>
+    </div>
+  );
+}
 
 export default App;
