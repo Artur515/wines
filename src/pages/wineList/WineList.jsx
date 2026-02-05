@@ -30,7 +30,7 @@ function WineList({ wineType }) {
   return (
     <div className={styles.page}>
       <div className={styles.topBar}>
-        <Button />
+        <Button text="Wine catalog" />
       </div>
       <div className={styles.list}>
         {isLoading && <Loader />}

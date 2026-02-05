@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import style from './style.module.scss';
 
-const Button = () => {
+const Button = ({ text }) => {
   const history = useHistory();
 
   const onClick = useCallback(() => {
@@ -13,7 +13,7 @@ const Button = () => {
   return (
     <div className={style.wrapper}>
       <button type="button" onClick={onClick} className={style.button}>
-        All wines
+        {text}
       </button>
     </div>
   );

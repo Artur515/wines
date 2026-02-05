@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="update card">
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="added default image if error, fixed some styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wineCard/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/wineList/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wineList/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +157,7 @@
       <workItem from="1619945928586" duration="647000" />
       <workItem from="1770235093275" duration="778000" />
       <workItem from="1770235888866" duration="8672000" />
-      <workItem from="1770318542597" duration="9544000" />
+      <workItem from="1770318542597" duration="10210000" />
     </task>
     <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
       <option name="closed" value="true" />
@@ -197,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770327131565</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added default image if error, fixed some styles">
+      <option name="closed" value="true" />
+      <created>1770328183660</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770328183660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +220,8 @@
     <MESSAGE value="shanged styles for wineList" />
     <MESSAGE value="changed styles for wineList" />
     <MESSAGE value="update card" />
-    <option name="LAST_COMMIT_MESSAGE" value="update card" />
+    <MESSAGE value="added default image if error, fixed some styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added default image if error, fixed some styles" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
