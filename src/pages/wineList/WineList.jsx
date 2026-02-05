@@ -1,15 +1,16 @@
 import React, { useCallback, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
+import { setCurrentPage } from '../../store/winesSlice';
 import Button from '../../components/button';
 import WINES_PER_PAGE from '../../constants/wineConstants';
 import fetchWines from '../../store/thunks/wineThunk';
 import WineSelectors from '../../store/selectors/winesSelectors';
-import { setCurrentPage } from '../../store/winesSlice';
-import styles from './style.module.scss';
 import Loader from '../../components/loader';
 import WineCard from '../../components/wineCard';
 import Pagination from '../../components/pagination';
+import styles from './style.module.scss';
 
 function WineList({ wineType }) {
   const dispatch = useDispatch();
@@ -49,7 +50,7 @@ function WineList({ wineType }) {
         <Pagination
           winePerPage={WINES_PER_PAGE}
           totalWine={list.length}
-          paginate={onPaginate}
+          onPaginate={onPaginate}
           currentPage={currentPage}
         />
       </div>
@@ -58,3 +59,7 @@ function WineList({ wineType }) {
 }
 
 export default WineList;
+
+WineList.propTypes = {
+  wineType: PropTypes.string.isRequired,
+};

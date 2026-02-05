@@ -1,4 +1,6 @@
 import React, { useCallback, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
+
 import wine from '../../img/wine.jpg';
 import styles from './style.module.scss';
 
@@ -59,13 +61,15 @@ function WineCard({ props }) {
             <p className={styles.subtitle}>{props.winery}</p>
             {props.location ? (
               <div className={styles.locationRow}>
-                <svg viewBox="0 0 24 24" width="16" height="16">
-                  <path
-                    d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10z"
-                    fill="currentColor"
-                  />
-                  <circle cx="12" cy="11" r="2.5" fill="#f8f6f1" />
-                </svg>
+                <span>
+                  <svg viewBox="0 0 24 24" width="16" height="16">
+                    <path
+                      d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10z"
+                      fill="currentColor"
+                    />
+                    <circle cx="12" cy="11" r="2.5" fill="#f8f6f1" />
+                  </svg>
+                </span>
                 <span>{props.location}</span>
               </div>
             ) : null}
@@ -85,5 +89,19 @@ function WineCard({ props }) {
     </div>
   );
 }
+
+WineCard.propTypes = {
+  props: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    image: PropTypes.string,
+    wine: PropTypes.string,
+    winery: PropTypes.string,
+    location: PropTypes.string,
+    rating: PropTypes.shape({
+      average: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+      reviews: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    }),
+  }).isRequired,
+};
 
 export default WineCard;

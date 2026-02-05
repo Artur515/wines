@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import style from './style.module.scss';
 
@@ -20,3 +21,11 @@ const Button = ({ text }) => {
 };
 
 export default Button;
+
+Button.propTypes = {
+  text: PropTypes.string,
+};
+
+Button.defaultProps = {
+  text: 'Browse wines',
+};

@@ -35,6 +35,14 @@
         "jsx": "never"
       }
     ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": [
+          "./"
+        ]
+      }
+    ],
     "react/function-component-definition": "off"
   }
 }

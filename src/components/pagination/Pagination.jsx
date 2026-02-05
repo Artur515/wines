@@ -1,15 +1,17 @@
 import React, { useCallback } from 'react';
+import PropTypes from 'prop-types';
 import ReactPaginate from 'react-paginate';
+
 import style from './style.module.scss';
 
 const Pagination = ({
-  winePerPage, totalWine, paginate, currentPage,
+  winePerPage, totalWine, currentPage, onPaginate,
 }) => {
   const totalPages = Math.ceil(totalWine / winePerPage);
 
   const handlePageChange = useCallback(({ selected }) => {
-    paginate(selected + 1);
-  }, [paginate]);
+    onPaginate(selected + 1);
+  }, [onPaginate]);
 
   const safeCurrentPage = Number.isFinite(currentPage)
     ? Math.min(Math.max(currentPage, 1), totalPages)
@@ -48,3 +50,10 @@ const Pagination = ({
 };
 
 export default Pagination;
+
+Pagination.propTypes = {
+  winePerPage: PropTypes.number.isRequired,
+  totalWine: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  onPaginate: PropTypes.func.isRequired,
+};
