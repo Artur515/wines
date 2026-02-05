@@ -35,7 +35,15 @@ function WineList({ wineType }) {
       <div className={styles.list}>
         {isLoading && <Loader />}
         {!isLoading && errors && <div>{errors || 'Failed to load wines.'}</div>}
-        {!isLoading && !errors && currentWine.map((el) => <WineCard key={el.id} props={el} />)}
+        {!isLoading && !errors && currentWine.map((el, index) => (
+          <div
+            key={`${el.id}-${currentPage}`}
+            className={styles.cardWrapper}
+            style={{ '--delay': `${index * 25}ms` }}
+          >
+            <WineCard props={el} />
+          </div>
+        ))}
       </div>
       <div className={styles.bottomBar}>
         <Pagination

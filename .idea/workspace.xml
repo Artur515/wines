@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="implemented store,selectors, improve wineList">
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="changed styles for wineList">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/loader.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wrapper/Wrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wrapper/Wrapper.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/wineCard/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/wineConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/wineConstants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/wineList/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wineList/style.module.scss" afterDir="false" />
     </list>
@@ -160,7 +158,7 @@
       <workItem from="1619945928586" duration="647000" />
       <workItem from="1770235093275" duration="778000" />
       <workItem from="1770235888866" duration="8672000" />
-      <workItem from="1770318542597" duration="5385000" />
+      <workItem from="1770318542597" duration="8540000" />
     </task>
     <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
       <option name="closed" value="true" />
@@ -186,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770322045827</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed styles for wineList">
+      <option name="closed" value="true" />
+      <created>1770324040099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1770324040099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +202,9 @@
     <MESSAGE value="added lint,fixed image import,moved all styles to module.scss" />
     <MESSAGE value="implement craco,implement pagination, fixed some styles , improve a couple of imports" />
     <MESSAGE value="implemented store,selectors, improve wineList" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented store,selectors, improve wineList" />
+    <MESSAGE value="shanged styles for wineList" />
+    <MESSAGE value="changed styles for wineList" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed styles for wineList" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

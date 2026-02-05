@@ -1,3 +1,3 @@
-const WINES_PER_PAGE = 20;
+const WINES_PER_PAGE = 18;
 
 export default WINES_PER_PAGE;
