@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import styles from './style.module.scss';
 import wine from '../../img/wine.jpg';
 
-function WinePresent({ props }) {
+function WineCard({ props }) {
   const [visibilityStyle, setVisibilityStyle] = useState(false);
 
   const onPopupClick = useCallback(() => {
@@ -50,4 +50,4 @@ function WinePresent({ props }) {
   );
 }
 
-export default WinePresent;
+export default WineCard;

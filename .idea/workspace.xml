@@ -4,31 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="added lint,fixed image import,moved all styles to module.scss">
-      <change afterPath="$PROJECT_DIR$/src/pages/MainNavigation/MainNavigation.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainNavigation/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/redWines/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/roseWines/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sparklingWines/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/whiteWines/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="implement craco,implement pagination, fixed some styles , improve a couple of imports">
+      <change afterPath="$PROJECT_DIR$/src/components/button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/loader/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pagination/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/wineCard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/wineConstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/thunks/wineThunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainNavigation/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/loader/loader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/loader.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/winePresent/WinePresent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/winePresent/WinePresent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/winePresent/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/winePresent/style.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redWines/RedWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redWines/RedWines.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/roseWines/RoseWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/roseWines/RoseWines.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sparklingWines/SparklingWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sparklingWines/SparklingWines.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/whiteWines/WhiteWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/whiteWines/WhiteWines.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/winePresent/WinePresent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/winePresent/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redWines/RedWines.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redWines/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/redWines/style.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/roseWines/RoseWines.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/roseWines/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sparklingWines/SparklingWines.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sparklingWines/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/whiteWines/WhiteWines.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/whiteWines/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,27 +93,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feat/improved-component-structure",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/React/wines",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/Users/React/wines/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.lint.executor": "Run",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/improved-component-structure&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/React/wines&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/React/wines/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -175,7 +174,8 @@
       <updated>1619945924765</updated>
       <workItem from="1619945928586" duration="647000" />
       <workItem from="1770235093275" duration="778000" />
-      <workItem from="1770235888866" duration="7900000" />
+      <workItem from="1770235888866" duration="8672000" />
+      <workItem from="1770318542597" duration="3340000" />
     </task>
     <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
       <option name="closed" value="true" />
@@ -185,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770238321913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement craco,implement pagination, fixed some styles , improve a couple of imports">
+      <option name="closed" value="true" />
+      <created>1770275511001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770275511001</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +201,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added lint,fixed image import,moved all styles to module.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lint,fixed image import,moved all styles to module.scss" />
+    <MESSAGE value="implement craco,implement pagination, fixed some styles , improve a couple of imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement craco,implement pagination, fixed some styles , improve a couple of imports" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

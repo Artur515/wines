@@ -4,27 +4,32 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Wrapper from '../components/wrapper/Wrapper';
 import MainNavigation from '../pages/MainNavigation';
-import RedWines from '../pages/redWines';
-import WhiteWines from '../pages/whiteWines';
-import SparklingWines from '../pages/sparklingWines';
-import RoseWines from '../pages/roseWines';
+import WineList from '../pages/wineList/WineList';
 
-function Application({ location }) {
-  return (
-    <Wrapper>
-      <TransitionGroup className="transition-group">
-        <CSSTransition key={location.key} timeout={{ enter: 500, exit: 500 }} classNames="fade">
-          <Switch>
-            <Route exact path="/" component={MainNavigation} />
-            <Route path="/reds" component={RedWines} />
-            <Route path="/whites" component={WhiteWines} />
-            <Route path="/sparkling" component={SparklingWines} />
-            <Route path="/rose" component={RoseWines} />
-          </Switch>
-        </CSSTransition>
-      </TransitionGroup>
-    </Wrapper>
-  );
-}
+const WINE_ROUTES = [
+  { path: '/reds', type: 'reds' },
+  { path: '/whites', type: 'whites' },
+  { path: '/sparkling', type: 'sparkling' },
+  { path: '/rose', type: 'rose' },
+];
+
+const Application = ({ location }) => (
+  <Wrapper>
+    <TransitionGroup className="transition-group">
+      <CSSTransition key={location.key} timeout={{ enter: 500, exit: 500 }} classNames="fade">
+        <Switch>
+          <Route exact path="/" component={MainNavigation} />
+          {WINE_ROUTES.map(({ path, type }) => (
+            <Route
+              key={path}
+              path={path}
+              render={() => <WineList wineType={type} />}
+            />
+          ))}
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
+  </Wrapper>
+);
 
 export default withRouter(Application);
