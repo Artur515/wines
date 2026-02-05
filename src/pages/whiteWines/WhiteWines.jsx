@@ -38,7 +38,12 @@ function WhiteWines({ match }) {
     <div className={styles.wrapper}>
       <Button />
       {loading ? <Loader /> : currentWine.map((el) => <WinePresent key={el.id} props={el} />)}
-      <Pagination winePerPage={winePerPage} totalWine={whiteWine.length} paginate={paginate} />
+      <Pagination
+        winePerPage={winePerPage}
+        totalWine={whiteWine.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
     </div>
   );
 }

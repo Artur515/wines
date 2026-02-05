@@ -9,24 +9,24 @@
   position: relative;
 }
 
-.img {
+.image {
   width: 40px;
   object-fit: cover;
 }
 
-.h4 {
+.title {
   max-width: 200px;
   cursor: pointer;
 }
 
-.p {
+.meta {
   max-width: 250px;
   margin: 0;
   text-shadow: #e0e0e0 1px 1px 0;
 }
 
-.text {
-  /*visibility: hidden;*/
+.tooltip,
+.reviewsTooltip {
   width: 150px;
   background-color: #d4d4d4;
   color: #050505;
@@ -34,30 +34,23 @@
   text-align: center;
   padding: 5px 0;
   position: absolute;
+  visibility: hidden;
+  left: 30%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip {
   z-index: 10;
   bottom: -30px;
-  left: 30%;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 
-.text2 {
-  visibility: hidden;
-  width: 150px;
-  background-color: #d4d4d4;
-  color: #050505;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px 0;
-  position: absolute;
+.reviewsTooltip {
   z-index: 11;
   bottom: -61px;
-  left: 30%;
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 
-.visibility {
+.tooltipVisible {
   visibility: visible;
   opacity: 1;
 }

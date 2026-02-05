@@ -1,12 +1,13 @@
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import RedWines from '../pages/redWines/RedWines';
-import WhiteWines from '../pages/whiteWines/WhiteWines';
-import SparklingWines from '../pages/sparklingWines/SparklingWines';
-import RoseWines from '../pages/roseWines/RoseWines';
-import Header from '../components/header/Header';
+
 import Wrapper from '../components/wrapper/Wrapper';
+import MainNavigation from '../pages/MainNavigation';
+import RedWines from '../pages/redWines';
+import WhiteWines from '../pages/whiteWines';
+import SparklingWines from '../pages/sparklingWines';
+import RoseWines from '../pages/roseWines';
 
 function Application({ location }) {
   return (
@@ -14,7 +15,7 @@ function Application({ location }) {
       <TransitionGroup className="transition-group">
         <CSSTransition key={location.key} timeout={{ enter: 500, exit: 500 }} classNames="fade">
           <Switch>
-            <Route exact path="/" component={Header} />
+            <Route exact path="/" component={MainNavigation} />
             <Route path="/reds" component={RedWines} />
             <Route path="/whites" component={WhiteWines} />
             <Route path="/sparkling" component={SparklingWines} />

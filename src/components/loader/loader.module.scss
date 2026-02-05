@@ -1,5 +1,7 @@
+@use "sass:math";
+
 $count: 10;
-$time: 2; // in seconds
+$time: 2;
 $size: 100;
 $color: black;
 
@@ -53,26 +55,26 @@ $color: black;
 
 @for $i from 1 through $count {
   .preloader div:nth-child(#{$i}) {
-    transform: rotateZ(((360 / $count) * ($i - 1)) + deg);
+    transform: rotateZ(math.div(360deg, $count) * ($i - 1));
     animation: rotateCircle + $i $time + s infinite linear;
     z-index: $count - $i;
   }
   @keyframes rotateCircle#{$i} {
-    #{percentage(((50 / $count) * ($i - 1)) / 100)} {
+    #{math.percentage(math.div((math.div(50, $count) * ($i - 1)), 100))} {
       opacity: 0;
     }
-    #{percentage((((50 / $count) + 0.0001) * ($i - 1)) / 100)} {
+    #{math.percentage(math.div((math.div(50, $count) + 0.0001) * ($i - 1), 100))} {
       opacity: 1;
-      transform: rotateZ((0 - ((360 / $count) * ($i - 2))) + deg);
+      transform: rotateZ(-1 * math.div(360deg, $count) * ($i - 2));
     }
-    #{percentage((((50 / $count) * ($i - 0)) + 2) / 100)} {
-      transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+    #{math.percentage(math.div((math.div(50, $count) * ($i - 0)) + 2, 100))} {
+      transform: rotateZ(-1 * math.div(360deg, $count) * ($i - 1));
     }
-    #{percentage(((50 + ((50 / $count) * ($i - 0))) + 2) / 100)} {
-      transform: rotateZ((0 - ((360 / $count) * ($i - 1))) + deg);
+    #{math.percentage(math.div(50 + (math.div(50, $count) * ($i - 0)) + 2, 100))} {
+      transform: rotateZ(-1 * math.div(360deg, $count) * ($i - 1));
     }
     100% {
-      transform: rotateZ((0 - ((360 / $count) * ($count - 1))) + deg);
+      transform: rotateZ(-1 * math.div(360deg, $count) * ($count - 1));
       opacity: 1;
     }
   }

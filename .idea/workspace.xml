@@ -4,31 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="">
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="added lint,fixed image import,moved all styles to module.scss">
+      <change afterPath="$PROJECT_DIR$/src/pages/MainNavigation/MainNavigation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainNavigation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/redWines/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/roseWines/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sparklingWines/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/whiteWines/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/Loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainNavigation/style.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/loader.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/loader.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/style.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/winePresent/WinePresent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/winePresent/WinePresent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/winePresent/style.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wrapper/Wrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wrapper/Wrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/winePresent/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/winePresent/style.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/redWines/RedWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/redWines/RedWines.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/redWines/style.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/roseWines/RoseWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/roseWines/RoseWines.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/sparklingWines/SparklingWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sparklingWines/SparklingWines.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/whiteWines/WhiteWines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/whiteWines/WhiteWines.jsx" afterDir="false" />
@@ -127,6 +124,12 @@
       </map>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/MainNavigation" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -172,12 +175,25 @@
       <updated>1619945924765</updated>
       <workItem from="1619945928586" duration="647000" />
       <workItem from="1770235093275" duration="778000" />
-      <workItem from="1770235888866" duration="2236000" />
+      <workItem from="1770235888866" duration="7900000" />
     </task>
+    <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
+      <option name="closed" value="true" />
+      <created>1770238321913</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770238321913</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added lint,fixed image import,moved all styles to module.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lint,fixed image import,moved all styles to module.scss" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useHistory } from 'react-router-dom';
+
 import style from './style.module.scss';
 
-function Button({ props }) {
+const Button = () => {
   const history = useHistory();
 
-  const handleClick = () => {
+  const onClick = useCallback(() => {
     history.push('./');
-  };
+  }, [history]);
 
   return (
-    <div className={style.btnWrap}>
-      <button type="button" onClick={handleClick} className={style.button}>
+    <div className={style.wrapper}>
+      <button type="button" onClick={onClick} className={style.button}>
         All wines
       </button>
     </div>
   );
-}
+};
 
 export default Button;

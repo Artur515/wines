@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styles from './style.module.scss';
 import wine from '../../img/wine.jpg';
 
 function WinePresent({ props }) {
   const [visibilityStyle, setVisibilityStyle] = useState(false);
 
-  const handlePopupClick = (event) => {
+  const onPopupClick = useCallback(() => {
     setVisibilityStyle(!visibilityStyle);
-  };
-  const handleKeyDown = (event) => {
+  }, [visibilityStyle]);
+
+  const onKeyDown = useCallback((event) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      handlePopupClick();
+      onPopupClick();
     }
-  };
-  const textVision = {
-    visibility: 'visible',
-    opacity: '1',
-  };
+  }, [onPopupClick]);
+
+  const tooltipClassName = `${styles.tooltip} ${visibilityStyle ? styles.tooltipVisible : ''}`;
+  const reviewsClassName = `${styles.reviewsTooltip} ${visibilityStyle ? styles.tooltipVisible : ''}`;
 
   return (
     <div
@@ -25,24 +25,22 @@ function WinePresent({ props }) {
       id={props.id}
       role="button"
       tabIndex={0}
-      onKeyDown={handleKeyDown}
-      onClick={handlePopupClick}
+      onKeyDown={onKeyDown}
+      onClick={onPopupClick}
     >
-      <img className={styles.img} src={props.image ? props.image : wine} alt={props.wine} />
+      <img className={styles.image} src={props.image ? props.image : wine} alt={props.wine} />
       <div>
-        <h4 className={styles.h4}>{props.wine}</h4>
-        <p className={styles.p}>{props.winery}</p>
-        <p className={styles.p}>{props.location}</p>
+        <h4 className={styles.title}>{props.wine}</h4>
+        <p className={styles.meta}>{props.winery}</p>
+        <p className={styles.meta}>{props.location}</p>
         <p
-          className={styles.text}
-          style={visibilityStyle ? textVision : null}
+          className={tooltipClassName}
         >
           Average:
           {props.rating ? props.rating.average : ''}
         </p>
         <p
-          className={styles.text2}
-          style={visibilityStyle ? textVision : null}
+          className={reviewsClassName}
         >
           Reviews:
           {props.rating ? props.rating.reviews : ''}
