@@ -3,14 +3,12 @@
 }
 
 .button {
-  margin-top: 5px;
-  width: 50%;
-  height: 30px;
+  margin: 8px auto;
+  width: min(420px, 90%);
+  height: 36px;
   background: transparent;
   border: 0;
-  position: fixed;
-  top: 0;
-  left: 25%;
+  display: block;
   cursor: pointer;
 
   &:hover {

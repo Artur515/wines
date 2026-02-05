@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  min-height: 100vh;
+  width: 100%;
+
   .fade-enter {
     opacity: 0.01;
   }
@@ -21,6 +24,7 @@ const Wrapper = styled.div`
 
   div.transition-group {
     position: relative;
+    min-height: 100vh;
   }
 
   section.route-section {

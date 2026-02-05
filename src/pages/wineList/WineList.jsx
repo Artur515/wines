@@ -27,21 +27,24 @@ function WineList({ wineType }) {
     dispatch(setCurrentPage(pageNumber));
   }, [dispatch]);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
   return (
-    <div className={styles.wrapper}>
-      <Button />
-      {!isLoading && errors && <div>{errors || 'Failed to load wines.'}</div>}
-      {!isLoading && !errors && currentWine.map((el) => <WineCard key={el.id} props={el} />)}
-      <Pagination
-        winePerPage={WINES_PER_PAGE}
-        totalWine={list.length}
-        paginate={onPaginate}
-        currentPage={currentPage}
-      />
+    <div className={styles.page}>
+      <div className={styles.topBar}>
+        <Button />
+      </div>
+      <div className={styles.list}>
+        {isLoading && <Loader />}
+        {!isLoading && errors && <div>{errors || 'Failed to load wines.'}</div>}
+        {!isLoading && !errors && currentWine.map((el) => <WineCard key={el.id} props={el} />)}
+      </div>
+      <div className={styles.bottomBar}>
+        <Pagination
+          winePerPage={WINES_PER_PAGE}
+          totalWine={list.length}
+          paginate={onPaginate}
+          currentPage={currentPage}
+        />
+      </div>
     </div>
   );
 }

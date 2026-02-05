@@ -20,10 +20,10 @@ const Pagination = ({
   }
 
   return (
-    <nav className={style.center} aria-label="Pagination">
+    <nav aria-label="Pagination">
       <ReactPaginate
         pageCount={totalPages}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={3}
         marginPagesDisplayed={1}
         onPageChange={handlePageChange}
         forcePage={safeCurrentPage - 1}
