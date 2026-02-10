@@ -5,7 +5,7 @@ import styles from './App.module.scss';
 
 const App = () => (
   <div className={styles.app}>
-    <BrowserRouter basename="/wines">
+    <BrowserRouter>
       <Application />
     </BrowserRouter>
   </div>
