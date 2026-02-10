@@ -1,14 +1,21 @@
 .pagination {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  grid-auto-flow: column;
+  column-gap: var(--page-gap);
   padding: 0;
-  margin: 0;
   list-style: none;
+  --page-size: clamp(32px, 6vw, 44px);
+  --page-gap: 8px;
+  width: min(100%, calc((var(--page-size) * 9) + (var(--page-gap) * 8)));
+  grid-template-columns: repeat(9, var(--page-size));
+  margin: 0 auto;
   @media (max-width: 768px) {
-    gap: 0;
-    justify-content: space-between;
+    --page-size: clamp(28px, 10vw, 40px);
+    --page-gap: 4px;
+    width: min(100%, calc((var(--page-size) * 9) + (var(--page-gap) * 8)));
+    grid-template-columns: repeat(9, var(--page-size));
   }
 
   li {
@@ -28,15 +35,20 @@
 }
 
 .pageLink {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: black;
-  padding: 8px 16px;
+  padding: 8px 0;
+  min-width: var(--page-size);
+  text-align: center;
+  box-sizing: border-box;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   border: 1px solid #ddd;
   background: transparent;
   @media (max-width: 768px) {
-    padding: 6px 12px;
+    padding: 6px 0;
   }
 }
 
@@ -48,7 +60,12 @@
 
 .ellipsis {
   color: #585247;
-  padding: 8px 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--page-size);
+  padding: 8px 0;
+  box-sizing: border-box;
 }
 
 .disabled .pageLink {

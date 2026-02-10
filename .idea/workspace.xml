@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="changed button styles">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="added PropTypes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/wineCard/WineCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainNavigation/MainNavigation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainNavigation/MainNavigation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wineList/WineList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pagination/style.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/style.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +167,8 @@
       <workItem from="1770235093275" duration="778000" />
       <workItem from="1770235888866" duration="8672000" />
       <workItem from="1770318542597" duration="11052000" />
-      <workItem from="1770329631478" duration="112000" />
+      <workItem from="1770329631478" duration="1750000" />
+      <workItem from="1770744387449" duration="1356000" />
     </task>
     <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
       <option name="closed" value="true" />
@@ -233,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770328845291</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added PropTypes">
+      <option name="closed" value="true" />
+      <created>1770329841534</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1770329841534</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +249,8 @@
     <MESSAGE value="update card" />
     <MESSAGE value="added default image if error, fixed some styles" />
     <MESSAGE value="changed button styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed button styles" />
+    <MESSAGE value="added PropTypes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PropTypes" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
