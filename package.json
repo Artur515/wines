@@ -2,7 +2,6 @@
   "name": "wine_trainee",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Artur515.github.io/wines/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
     "@testing-library/jest-dom": "^5.12.0",
