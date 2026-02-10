@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="fixed path, added icon">
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+    <list default="true" id="1148e889-d993-44e7-82ae-373425a20eda" name="Default Changelist" comment="changed path">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Application.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Application.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +171,7 @@
       <workItem from="1770235888866" duration="8672000" />
       <workItem from="1770318542597" duration="11052000" />
       <workItem from="1770329631478" duration="1750000" />
-      <workItem from="1770744387449" duration="2620000" />
+      <workItem from="1770744387449" duration="2905000" />
     </task>
     <task id="LOCAL-00001" summary="added lint,fixed image import,moved all styles to module.scss">
       <option name="closed" value="true" />
@@ -252,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770747390327</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="changed path">
+      <option name="closed" value="true" />
+      <created>1770747630163</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1770747630163</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,8 @@
     <MESSAGE value="added PropTypes" />
     <MESSAGE value="fixed: pagination styles" />
     <MESSAGE value="fixed path, added icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed path, added icon" />
+    <MESSAGE value="changed path" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed path" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

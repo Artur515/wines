@@ -17,7 +17,7 @@ const Application = ({ location }) => (
   <Wrapper>
     <TransitionGroup className="transition-group">
       <CSSTransition key={location.key} timeout={{ enter: 500, exit: 500 }} classNames="fade">
-        <Switch>
+        <Switch location={location}>
           <Route exact path="/" component={MainNavigation} />
           {WINE_ROUTES.map(({ path, type }) => (
             <Route
